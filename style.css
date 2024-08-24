@@ -1,5 +1,17 @@
 :root {
   --accent-color: #003366;
+  --image-width: 300px;
+}
+
+@media not (max-width: 800px) {
+  .mobile-only {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .desktop-only {
+    display: none;
+  }
 }
 
 body {
@@ -88,4 +100,25 @@ button.navbutton {
 .navdialog .twocolumns {
   display: grid;
   grid-template-columns: auto auto;
+}
+
+.picture-with-text {
+  display: grid;
+  grid-template-columns: var(--image-width) 1fr;
+  gap: 1rem;
+  align-items: center;
+  margin: 0 auto;
+}
+.picture-with-text img {
+  max-width: var(--image-width);
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .picture-with-text {
+    display: block;
+  }
+  .picture-with-text img {
+    display: block;
+    margin: auto;
+  }
 }
