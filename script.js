@@ -35,12 +35,12 @@ navDialog.innerHTML = `
 <div class=twocolumns>
   <div class=navcol></div>
   <div class=close>
-    <a>x</a>
+    <button>x</button>
   </div>
 </div>
 `;
 
-navDialog.querySelector('a').onclick = () => navDialog.close();
+navDialog.querySelector('button').onclick = () => navDialog.close();
 
 const navcol = navDialog.querySelector('.navcol');
 for (const navItem of navItems) {

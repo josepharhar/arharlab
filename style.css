@@ -44,6 +44,7 @@ nav {
 
 nav a,
 .navdialog a,
+.navdialog button,
 .navbutton {
   color: #fff;
   text-decoration: none;
@@ -57,10 +58,12 @@ nav a:hover,
 nav a.active,
 .navdialog a:hover,
 .navdialog a.active,
+.navdialog button,
 .navbutton {
   background-color: #00509e;
 }
 
+.navdialog button,
 .navbutton {
   border: none;
 }
